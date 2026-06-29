@@ -110,3 +110,36 @@ code {
   background: var(--code-bg);
 } */
 @import "tailwindcss";
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(135deg, #f0fdf4 0%, #fff7ed 45%, #ffffff 100%);
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #bbf7d0;
+  color: #14532d;
+}
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
